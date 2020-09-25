@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Happy Wedding</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Abdelrahman Ashraf">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	    <script type="text/javascript" src="bootstrap-4.0.0/js/tests/vendor/jquery-1.9.1.min.js"></script>
+	    <script type="text/javascript" src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+	    <script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+	    <!-- fontowesome -->
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/brands.css">
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">
+
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+
+	</head>
+	<body>
+		<header class="OptionalMenu">
+
+			<section class="ContentMenu">
+
+				<a href="#" id="WelcomMsg">Colorlib</a>
+
+				<a id="Items" href="#" onclick=""><p id="ExtraItems"><p id="plus">+</p>WEDDINGDREAMS</p></a>
+
+				</section>
+
+				<section id="icons" >
+					<a style="text-decoration: none;color: grey;" href="#"><i id="PC" class="fas fa-desktop fa-2x"></i></a>
+					<a style="text-decoration: none;color: grey;" href="#"><i id="Tablet"  class="fas fa-tablet-alt fa-2x"></i></a>
+					<a style="text-decoration: none;color: grey;" href="#"> <i id="Mobile"  class="fas fa-mobile-alt fa-2x"></i></a>
+					<a style="text-decoration: none;color: grey;" href="#"><i id="download" style="color: #00CC66;" class="fas fa-cloud-download-alt fa-2x"></i></a>
+					<a id="close" href="#"><i id="wrong" class="fas fa-times"></i></a>
+				</section>
+		</header>
+
+
+		<div id="saveImage" style="display: none;padding-top: 30px;background-color: #2C2C2C;">
+			<a  href="#" id="image1" style="text-decoration: none;color: white;display: inline-block;padding-left: 80px;">
+				<img src="image1.jpg">
+				<p style="width: 240px;padding-left: 40px;box-shadow: 1px 1px 1px 1px rgb(0 , 0 , 0)">WEDDINGDREAMS</p>
+			</a>
+
+			<a onclick="" href="#" id="image2" style="text-decoration: none;color: white;display: inline-block;padding-left: 30px;">
+				<img src="image2.jpg">
+				<p id="p1" style="width: 240px;padding-left: 90px;box-shadow: 1px 1px 1px 1px rgb(0 , 0 , 0)">WEBAPP</p>
+			</a>
+
+			<a href="#" id="image3" style="text-decoration: none;color: white;display: inline-block;padding-left: 30px;">
+				<img src="image3.jpg">
+				<p style="width: 240px;padding-left: 70px;box-shadow: 1px 1px 1px 1px rgb(0 , 0 , 0)">VIDEOGRAPH</p>
+			</a>
+
+			<a href="#" id="image4" style="text-decoration: none;color: white;display: inline-block;padding-left: 30px;">
+				<img src="image4.jpg">
+				<p style="width: 240px;padding-left: 90px;box-shadow: 1px 1px 1px 1px rgb(0 , 0 , 0)">SKATER</p>
+			</a>
+
+			<a href="#" id="image5" style="text-decoration: none;color: white;display: inline-block;padding-left: 30px;">
+				<img src="image5.jpg">
+				<p style="width: 240px;padding-left: 80px;box-shadow: 1px 1px 1px 1px rgb(0 , 0 , 0)">SALVATION</p>
+			</a>
+		</div>
+
+		
+
+		 	<div class="MainMenu" id="HOME">
+				<p style="display: inline-block;" id="dream"><a style="text-decoration: none;color: black;" href="#">DREAMS</a></p>
+
+				<div style="display: inline-block; font-size: 20px;margin-left: 100px;" class="menu">
+					<a style="text-decoration: none;color: black;" id="Home"   href="#HOME">HOME</a>
+					<a id="service" style="padding-left: 30px;text-decoration: none;color: black;"  href="#">SERVICES</a>
+					<a id="Protfolio" style="padding-left: 30px;text-decoration: none;color: black;"  href="#">PROTFOLIO</a>
+
+					
+				<div style="display: inline-block;padding-left: 20px;background-color: transparent;" class="dropdown">
+					  <a style="display: inline-block;text-decoration: none;color: black;background-color: transparent;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">PAGES
+					  <span class="caret"></span></a>
+					  <ul class="dropdown-menu" style="background-color: black;">
+					    <li><a id="about" style="display: inline-block;text-decoration: none;color: white;" href="#">About</a></li>
+					    <li><a id="team" style="display: inline-block;text-decoration: none;color: white;" href="#">Team</a></li>
+					    <li><a id="BlogDe" style="display: inline-block;text-decoration: none;color: white;" href="#">Blog Details</a></li>
+					  </ul>
+				</div>
+			
+					<a id="news" style="padding-left: 30px;text-decoration: none;color: black;"  href="#">NEWS</a>
+					<a  id="contact" style="padding-left: 30px;text-decoration: none;color: black;"  href="#">CONTACT</a>
+				</div>
+
+				<div style="display: inline-block; font-size: 20px;margin-left: 200px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="file:///H:/Ramos/Codes%20HTML/Web%20Course%20Tasks/Fifth%20Task/index2.html#"><i style="color: black;" class="fas fa-search fa-1x"></i></a>
+				</div>
+
+			</div>
+
+		
+
+		<div class="wave">
+				<div style="color: white;padding-top: 280px;">
+					<p style="margin-left: 350px;font-size: 20px;">WELCOM TO DREAM</p>
+					<h1 style="font-size: 25px;margin-left: 300px;">PLAN THE PERFECT WEDDING</h1>
+					<p style="margin-left: 230px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</p>
+				</div>
+		</div>
+
+
+		<section id="BlogDetail" style="display: none;">
+			
+			<article style="display: inline-block;margin-left: 300px;">
+				<h1 style="margin-left: 40px;">10 Tips for a Totally Awesome Zero-Waste </h1>
+			<h1 style="margin-left: 350px;">Wedding</h1>
+			<img src="wed3.jpg" width="600" height="500" style="margin-left: 150px;">
+			<p style="margin-left: 150px;padding-top: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.Risus commodo viverra<br> maecenas accumsan lacus vel facilisis</p>
+			</article>
+
+			
+
+		<div id="aboutParagraph" style="">
+			<img src="about.png" height="300" style="float: right;">
+			<h1 style="padding-top: 80px;padding-left: 100px;">WEDDING VENDORS & VENUES </h1>
+			<h1 style="padding-left: 100px;">WE LOVE!</h1>
+			<p style="padding-left: 100px;">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus lorem ipsum dolor sit amet lacus vel facilisis.</p>
+			<p style="padding-left: 100px;">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+		</div>
+	</section>
+
+		<section id="parent" style="display: none;">
+			<h1 style="text-align: center;">OUR CLIENT SAY</h1>
+			
+			
+			<div style="box-shadow: 1px 1px 1px 1px;width: 400px;margin-left: 100px;padding: 30px;display: inline-block;margin-left: 300px; margin-top: 60px;">
+				<p>Quis ipsum suspendise ulterices gravida</p>
+				<p>commodo viverra maecenas accumsan lacus vel</p>
+				<p>facilisis ut labore magna aliqua</p>
+				<p>accumsan lacus vel facilisis</p>
+				<img src="ta-2.png">
+			</div>
+	
+
+	
+			
+			<div style="box-shadow: 1px 1px 1px 1px;width: 400px;margin-left: 100px;padding: 30px;display: inline-block;margin-top: 60px;">
+				<p>Quis ipsum suspendise ulterices gravida</p>
+				<p>commodo viverra maecenas accumsan lacus vel</p>
+				<p>facilisis ut labore magna aliqua</p>
+				<p>accumsan lacus vel facilisis</p>
+				<img src="ta-2.png">
+			</div>
+		</section>
+
+		<section id="OurTeam" style="display: none;">
+			<h1 style="text-align: center;">OUR TEAM</h1>
+
+			<div style="padding-left: 200px;display: inline-block;">
+				<img src="team-1.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">CATANIS GREIMAR</p>
+				<p style="margin-left: 120px;">Makeup</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+			<div style="padding-left: 100px;display: inline-block;">
+				<img src="team-2.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">MAURICE WATKINS</p>
+				<p style="margin-left: 120px;">Makeup</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+			<div style="padding-left: 100px;display: inline-block;">
+				<img src="team-3.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">MAURICE WATKINS</p>
+				<p style="margin-left: 120px;">Makeup</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="OurTeam2" style="display: none;">
+			
+
+			<div style="padding-left: 200px;display: inline-block;">
+				<img src="team-4.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">SUSAN FULLER</p>
+				<p style="margin-left: 85px;">Photographer</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+			
+			<div style="padding-left: 110px;display: inline-block;">
+				<img src="team-5.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">LEON TAYLOR</p>
+				<p style="margin-left: 85px;">Photographer</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+			<div style="padding-left: 110px;display: inline-block;">
+				<img src="team-6.png">	
+				<p style="font-size: 20px;margin-left: 100px;padding-top: 40px;">HETTIE COLE</p>
+				<p style="margin-left: 120px;">Makeup</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+		</section>
+
+		<section id="OurTeam3" style="display: none;">
+		
+
+			<div style="padding-left: 200px;display: inline-block;">
+				<img src="team-7.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">HOWARD HAYNES</p>
+				<p style="margin-left: 110px;">Photographer</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+			<div style="padding-left: 100px;display: inline-block;">
+				<img src="team-8.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">LULA HENDERSON</p>
+				<p style="margin-left: 120px;">Makeup</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+			<div style="padding-left: 100px;display: inline-block;">
+				<img src="team-9.png">	
+				<p style="font-size: 20px;margin-left: 70px;padding-top: 40px;">PAULINE CARROLL</p>
+				<p style="margin-left: 120px;">Makeup</p>
+				<div style=" font-size: 20px;margin-left: 40px;color: " class="Itemmenu">
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-1x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-1x"></i></a>
+					
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+		<div id="Services">
+			<h1 style="text-align: center;margin-top: 50px;">OUR SERVICES</h1>
+		</div>
+
+			<section class="top-stories">
+				<article style="display: inline-block;margin-left: 100px;">
+				<i style="margin-left: 100px;" class="fas fa-camera-retro fa-5x"></i>
+						<br>
+					 <h1 style="font-size: 25px;margin-left: 40px;padding-top: 20px;">PHOTOS & VIDEO</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur </p>
+					<p style="margin-left: 30px;">adipiscing elit, eiusm`od tempor.</p>
+			</article>
+
+			<article style="display: inline-block;margin-left: 180px;">
+				<i style="margin-left: 100px;" class="fab fa-gratipay fa-5x"></i>
+				<h1 style="font-size: 25px;margin-left: 40px;padding-top: 20px;">WEDDING MAKEUP</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur </p>
+				<p style="margin-left: 30px;">adipiscing elit, eiusm`od tempor.</p>
+			</article>
+
+
+			<article style="display: inline-block;margin-left: 200px;">
+				<i style="margin-left: 100px;" class="fas fa-utensils fa-5x"></i>
+				<h1 style="font-size: 25px;margin-left: 60px;padding-top: 20px;">RESTAURANT</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur </p>
+				<p style="margin-left: 30px;">adipiscing elit, eiusm`od tempor.</p>
+			</article>
+
+			</section>
+
+
+			<section class="top-stories">
+				<article style="display: inline-block;margin-left: 100px;">
+				<i style="margin-left: 100px;" class="fas fa-music fa-5x"></i>
+						<br>
+					 <h1 style="font-size: 25px;margin-left: 40px;padding-top: 20px;">LIVE MUSIC & DJ</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur </p>
+					<p style="margin-left: 30px;">adipiscing elit, eiusm`od tempor.</p>
+			</article>
+
+			<article style="display: inline-block;margin-left: 180px;">
+				<i style="margin-left: 100px;" class="fas fa-birthday-cake fa-5x" ></i>
+				<h1 style="font-size: 25px;margin-left: 40px;padding-top: 20px;">WEDDING CAKE</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur </p>
+				<p style="margin-left: 30px;">adipiscing elit, eiusm`od tempor.</p>
+			</article>
+
+
+			<article style="display: inline-block;margin-left: 200px;">
+				<i style="margin-left: 100px;" class="fas fa-car-side fa-5x"></i>
+				<h1 style="font-size: 25px;margin-left: 60px;padding-top: 20px;">HONEYMOONS</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur </p>
+				<p style="margin-left: 30px;">adipiscing elit, eiusm`od tempor.</p>
+			</article>
+
+			</section>
+
+
+			<section id="Features">
+				<h1 style="padding-top: 100px;text-align: center;">OUR WEDDING FEATURE</h1>
+				<div style="display: inline-block; font-size: 20px;margin-left: 430px;padding-top: 60px;" class="menu">
+					<a style="text-decoration: none;color: black;"  href="#">ALL</a>
+					<a style="padding-left: 30px;text-decoration: none;color: black;"  href="#">COUPLE</a>
+					<a style="padding-left: 30px;text-decoration: none;color: black;"  href="#">EVENT</a>
+					<a style="padding-left: 30px;text-decoration: none;color: black;"  href="#">MUSICLIVE</a>
+					<a style="padding-left: 30px;text-decoration: none;color: black;"  href="#">HONEYMOON</a>
+					<a style="padding-left: 30px;text-decoration: none;color: black;"  href="#">PHOTOGRAPHY</a>
+				</div>
+			</section>
+
+			<section id="Gallrey" style="padding-top: 80px;">
+
+				<div style="margin-left: 120px;display: inline-block;" class="content_img">
+					 <img src='ring.jpg' width='100%' height='100%'>
+					 <div><p style="font-size: 15px;">CEREMONIES</p>
+						    	<h1 style="font-size: 20px;">Christina & Evelyn</h1></div>
+					</div>
+
+					<!-- Image 2 -->
+					<div style="margin-left: 120px;display: inline-block;" class="content_img">
+					 <img src='wed3.jpg' width='100%' height='100%'>
+					 <div><p style="font-size: 15px;">CEREMONIES</p>
+						    	<h1 style="font-size: 20px;">Christina & Evelyn</h1></div>
+					</div>
+
+					<!-- Image 3 -->
+					<div style="margin-left: 120px;display: inline-block;" class="content_img">
+					 <img src='beach.jpg' width='100%' height='100%'>
+					 <div><p style="font-size: 15px;">CEREMONIES</p>
+						    	<h1 style="font-size: 20px;">Christina & Evelyn</h1></div> 
+					</div>
+				
+
+			</section>
+
+			<section id="Gallrey2" style="padding-top: 80px;">
+
+				<div style="margin-left: 120px;display: inline-block;" class="content_img">
+					 <img src='honey.jpg' width='100%' height='100%'>
+					 <div><p style="font-size: 15px;">CEREMONIES</p>
+						    	<h1 style="font-size: 20px;">Christina & Evelyn</h1></div>
+					</div>
+
+<!-- Image 2 -->
+					<div style="margin-left: 120px;display: inline-block;" class="content_img">
+					 <img src='honey2.jpg' width='100%' height='100%'>
+					 <div><p style="font-size: 15px;">CEREMONIES</p>
+						    	<h1 style="font-size: 20px;">Christina & Evelyn</h1></div>
+					</div>
+
+					<!-- Image 3 -->
+					<div style="margin-left: 120px;display: inline-block;" class="content_img">
+					 <img src='bride2.jpg' width='100%' height='100%'>
+					 <div><p style="font-size: 15px;">CEREMONIES</p>
+						    	<h1 style="font-size: 20px;">Christina & Evelyn</h1></div> 
+					</div>
+				
+
+
+			</section>
+
+			<button id="view" style="width: 150px;height: 50px;margin-top: 50px;margin-left: 700px;background-color: grey;">
+				<a href="#HOME" style="text-decoration: none ;text-align: center;padding-top: 10px;color: black;">
+				VIEW MORE
+			</a>
+			</button>
+
+
+			<section id="MakeRequest" style="padding-top: 100px;width: 100%;background-image: url(flower.jpg);background-size: cover;background-repeat: no-repeat;">
+				
+			<article style="display: inline-block;padding-left: 150px;">
+				<i style="margin-left: 100px;" class="fas fa-church fa-4x"></i>
+						<br>
+					 <p style="font-size: 30px;margin-left: 100px;padding-top: 20px;color: black">8365</p>
+					<p style="color: red;font-size: 30px;margin-left: 80px;">PHOTOS </p>
+				
+			</article>
+
+			<article style="display: inline-block;padding-left: 60px;">
+				<i style="margin-left: 100px;" class="fas fa-grin-hearts fa-4x" ></i>
+				<h1 style="font-size: 25px;margin-left: 100px;padding-top: 20px;color: black;">568</h1>
+				<p style="color: red;font-size: 30px;margin-left: 30px;">HAPPY COUPLE</p>
+				
+			</article>
+
+
+			<article style="display: inline-block;padding-left: 40px;">
+				<i style="margin-left: 100px;" class="fas fa-glass-cheers fa-4x"></i>
+				<h1 style="font-size: 25px;margin-left: 120px;padding-top: 20px;color: black">849</h1>
+				<p style="color: red;font-size: 30px;margin-left: 100px;">JOAST </p>
+				
+			</article>
+
+			<article style="display: inline-block;padding-left: 120px;">
+				<i style="margin-left: 120px;" class="fas fa-birthday-cake fa-4x"></i>
+				<h1 style="font-size: 25px;margin-left: 120px;padding-top: 20px;color: black;">2574</h1>
+				<p style="color: red;font-size: 30px;margin-left: 70px;">DRESS CAKES </p>
+				
+			</article>
+
+
+			<article style="background-color: grey;width: 40%;margin-left: 500px;height: 250px;text-align: center;">
+				<p style="padding-top: 40px;">LET’S MEET</p>
+				<h1>MAKE A REQUEST</h1>
+				<p>Should you have any enquiries about Wedding </p>
+				<p>Planner, please fill in our enquiry form</p>
+			</article>
+
+		</section>
+
+		<section id="Fill-Form">
+			<form name="myForm" style="margin-top: 80px;margin-left: 500px;border: 1px solid white;">
+				<div>
+					<input type="text" name="name" placeholder="Name" style="width: 300px;padding: 10px;display: inline-block;color: black">
+				<input type="text" name="name" placeholder="Email" style="width: 300px;padding: 10px;display: inline-block;margin-left: 20px;color: black">
+				</div>
+				
+				<div style="margin-top: 30px;">
+
+					<select name="Services" id="Services" style="width: 300px;padding: 10px; background: transparent;">
+						<option>Services</option>
+				  <option >Option 1</option>
+				  <option>Option 2</option>
+				</select>
+
+				<select name="guest" id="guest" style="width: 300px;padding: 10px; background: transparent;margin-left: 20px;">
+
+					<option>Guest</option>
+				  <option >Option 1</option>
+				  <option>Option 2</option>
+				</select>
+
+				<div style="margin-top: 30px;">
+					<input type="text" name="message" placeholder="Message" style="width: 630px;padding: 10px;color: black">
+				
+				</div>
+
+				<button style="margin-top: 30px;margin-left: 150px;width: 250px;height: 60px;background-color: grey;border-radius: 10px;color: black" id="send" type="">
+					SEND A REQUEST
+				</button>
+
+			</form>
+		</section>
+
+
+		<section id="blog">
+			<h1  style="text-align: center;">OUR BLOG</h1>
+
+			<article style="display: inline-block;padding-left: 60px;margin-left: 100px;padding-top: 30px;">
+				<img src="latest-1.jpg">
+				<p style="padding-left: 30px;">Inspiration Nov 27, 2019 05 Comment</p>
+				<a href="#" style="text-decoration: none;color: black;font-size: 20px;padding-left: 30px;display: block;">Newlyweds share first wedding </a>
+				<a href="#" style="text-decoration: none;color: black;font-size: 20px;margin-left: 30px;">photos</a>
+				
+			</article>
+
+			<article style="display: inline-block;padding-left: 60px;">
+				<img src="latest-2.jpg">
+				<p style="padding-left: 30px;">Inspiration Nov 27, 2019 05 Comment</p>
+				<a href="#" style="text-decoration: none;color: black;font-size: 20px;padding-left: 30px;display: block;">Newlyweds share first wedding </a>
+				<a href="#" style="text-decoration: none;color: black;font-size: 20px;margin-left: 30px;">photos</a>
+				
+			</article>
+
+			<article style="display: inline-block;padding-left: 60px;">
+				<img src="latest-3.jpg">
+				<p style="padding-left: 30px;">Inspiration Nov 27, 2019 05 Comment</p>
+				<a href="#" style="text-decoration: none;color: black;font-size: 20px;padding-left: 30px;display: block;">Newlyweds share first wedding </a>
+				<a href="#" style="text-decoration: none;color: black;font-size: 20px;margin-left: 30px;">photos</a>
+				
+			</article>
+
+		</section>
+
+
+		<section id="Info" style="padding-top: 80px;display: none;">
+			<h1 style="font-size: 25px;display: inline-block;margin-left: 200px;">CONTACT INFO</h1>
+			<h1 style="font-size: 25px;display: inline-block;margin-left: 170px;">GET IN TOUCH</h1>
+			<div>
+				<i style="margin-left: 100px;display: inline-block;" class="fas fa-phone-alt fa-2x"></i>
+			<div style="display: inline-block;padding-top: 10px;">
+				<h1 style="font-size: 20px;padding-left: 50px;">Support@gmail.com</h1>
+				<p style="padding-left: 60px;">+ 1 212-683-9756</p>
+			</div>
+			<input type="text" name="" placeholder="Name" style="width: 300px;margin-left: 180px;padding: 10px;">
+			<input type="text" name="" placeholder="Email" style="width: 300px;margin-left: 50px;padding: 10px;">
+			</div>
+
+			<div style="padding-top: 30px;">
+				<i style="margin-left: 100px;display: inline-block;" class="fas fa-map-marker-alt fa-2x"></i>
+				<div style="display: inline-block;padding-top: 10px;">
+				<h1 style="font-size: 20px;padding-left: 50px;">799 W 6th St Hoisington, Kansas 121 </h1>
+				<p style="padding-left: 60px;">Sparrow Hawk, Alberta</p>
+				</div>
+				<input type="text" name="" placeholder="Your Message" style="width: 660px;margin-left: 50px;padding: 10px;">
+			</div>
+			<i ></i>
+			<div style="padding-top: 30px;">
+				<i style="margin-left: 100px;display: inline-block;" class="fas fa-stopwatch fa-2x"></i>
+				<div style="display: inline-block;padding-top: 10px;">
+				<h1 style="font-size: 20px;padding-left: 50px;">Mon - Sat : 8:00am - 5:00pm</h1>
+				<p style="padding-left: 60px;">Sunday: 8:00am - 7:00pm</p>
+				</div>
+				<button value="Send" style="width: 100px;margin-left: 50px;padding: 10px;background-color: grey;color: white;">Send</button>
+			</div>
+		</section>
+
+		<section id="images" style="padding-top: 30px;">
+			<a href="#" style="text-decoration: none;color: black;display: inline-block;padding-left: 160px;">
+				<img src="lc-5.png">
+			</a>
+
+			<a href="#" style="text-decoration: none;color: black;display: inline-block;padding-left: 140px;">
+				<img src="lc-4.png">
+			</a>
+
+			<a href="#" style="text-decoration: none;color: black;display: inline-block;padding-left: 150px;">
+				<img src="lc-2.png">
+			</a>
+
+			<a href="#" style="text-decoration: none;color: black;display: inline-block;padding-left: 160px;">
+				<img src="lc-3.png">
+			</a>
+
+
+			<a href="#" style="text-decoration: none;color: black;display: inline-block;padding-left: 140px;">
+				<img src="lc-1.png">
+			</a>
+		</section>
+
+
+		<section id="foot" style="background-color: #2D2D2D;color: white;">
+			
+			
+				<article style="border-bottom: 1px solid white;">
+					<h1 style="font-size: 20px;padding-top: 50px;margin-left: 150px;display: inline-block;">NEWSLETTER SUBSCRIBE</h1>
+			<input type="text" name="" placeholder="Email" value="Email" style="margin-left: 60px;padding: 10px;width: 250px;display: inline-block;background-color: #6B6B6B;color: white;">
+			<i style="background-color: white;color: black;width: 40px;height: 40px;" class="fas fa-rocket fa-2x"></i>
+			<div style="display: inline-block;margin-left: 200px;">
+				<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-facebook-f fa-2x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-twitter fa-2x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fab fa-instagram fa-2x"></i></a>
+					<a style="padding-left: 30px;text-decoration: none;" href="#"><i style="color: black;" class="fas fa-globe fa-2x"></i></a>
+					
+			</div>
+			<p style="font-size: 15px;padding-top: 20px;margin-left: 150px;">Signup and recive 10% of your wedding!</p>
+				</article>
+
+				<article style="border-bottom: 1px solid white;">
+					<div>
+						<h1 style="font-size: 25px;padding: 40px;display: inline-block;">DREAMS</h1>
+					<p style="display: inline-block;padding-left: 100px;">OPEN TIME</p>
+					<p style="display: inline-block;padding-left: 250px;">PHONE & EMAIL</p>
+					<p style="display: inline-block;padding-left: 260px;">PHONE & EMAIL</p>
+
+					<div>
+					<div style="display: inline-block;margin-left: 150px;">
+						<p style="padding-left: 100px;">Mon - Fri: 8:00am - 7:00pm</p>
+						<p style="padding-left: 120px;">Closed on weekend</p>
+					</div>
+					<div style="display: inline-block;margin-left: 70px;">
+						<p style="padding-left: 100px;">Support@gmail.com</p>
+						<p style="padding-left: 110px;">+ 1 212-683-9756</p>
+					</div>
+					<div style="display: inline-block;margin-left: 110px;">
+						<p style="padding-left: 100px;">799 W 6th St Hoisington, Kansas 121 </p>
+						<p style="padding-left: 120px;">Sparrow Hawk, Alberta</p>
+					</div>
+
+					</div>
+					</div>
+				</article>
+
+				
+				</article>
+
+				<article>
+					<p style="padding: 40px;display: inline-block;">Copyright ©2020 All rights reserved | This template is made with  by Colorlib</p>
+					<div style="display: inline-block;margin-left: 300px;">
+						<a href="#HOME" style="text-decoration: none;color: white;">Terms & Use</a>
+						<a href="#HOME" style="text-decoration: none;color: white;padding-left: 60px;"> Privacy Policy</a>
+					</div>
+				</article>
+			
+		</section>
+
+		<footer id="footer" style="width: 100%;height: 60px;background-color:#6C6C6C; ">
+			
+		</footer>
+
+		
+
+		
+	</body>
+</html>
